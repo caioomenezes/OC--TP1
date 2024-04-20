@@ -85,7 +85,6 @@ while True:
     else:
         None
     x = "" # Declaramos x
-    y = "" #Declaramos y
     
     #FORMATO TIPO R
     if palavras[0] =="add" or palavras[0] =="sll" or palavras[0] =="sub" or palavras[0] =="and" or palavras[0] =="or" or palavras[0] =="xor" or palavras[0] =="srl":
@@ -107,7 +106,6 @@ while True:
             saida.write(x + '\n')
         else:
           print(x)
-          #print(palavras)
     
     #FORMATO TIPO I
     elif palavras[0] =="ori" or palavras[0] =="lb" or palavras[0] =="lw" or palavras[0] =="lh" or palavras[0] =="addi" or palavras[0] =="andi" or palavras[0] =="xori":
@@ -130,7 +128,6 @@ while True:
                 saida.write(x + '\n')
         else:
             print(x)
-            #print(palavras)
         
     #FORMATO TIPO S/SB    
     elif palavras[0] =="sb" or palavras[0] == "bne" or palavras[0] =="sh" or palavras[0] =="sw" or palavras[0] =="beq" or palavras[0] =="bge":
@@ -151,7 +148,6 @@ while True:
                 saida.write(x + '\n')
         else:
             print(x)
-            #print(palavras)
             
     #implementaçao das PSEUDOINSTRUÇOES            
     elif palavras[0]=="mv" or palavras[0] == "li" or palavras[0] == "not" or palavras[0] == "neg":
